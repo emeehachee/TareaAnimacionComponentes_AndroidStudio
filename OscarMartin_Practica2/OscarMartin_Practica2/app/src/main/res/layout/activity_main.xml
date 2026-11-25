@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoitalia2"
+    android:orientation="vertical"
+    android:paddingLeft="25dp"
+    android:paddingTop="30dp"
+    android:paddingRight="25dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/haztuPedido"
+        android:textColor="@color/red"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/correoCliente"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/correo"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/contraCliente"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/contrasenia"
+        android:inputType="textPassword" />
+
+    <AutoCompleteTextView
+        android:id="@+id/ciudadCliente"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="23dp"
+        android:completionThreshold="1"
+        android:hint="@string/ciudadEntrega" />
+
+    <Switch
+        android:id="@+id/recordarDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/recordarDireccion" />
+
+    <Button
+        android:id="@+id/botonEntrarCarta"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="@color/red2"
+        android:text="@string/entrarCarta"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:cornerRadius="4dp" />
+
+</LinearLayout>

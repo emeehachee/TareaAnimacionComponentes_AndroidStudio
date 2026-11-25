@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo3_pizza"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".CuponesValoracionActivity">
+
+    <TextView
+        android:id="@+id/textoCuponesYValoracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Paso3"
+        android:textStyle="bold"
+        android:textColor="@color/gray"/>
+
+    <ProgressBar
+        android:id="@+id/barraProgresoFinal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:max="100"
+        android:progress="100"
+        android:progressTint="@color/blue" />
+
+    <TextView
+        android:id="@+id/textoAplicarCupones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/aplicarCupones"
+        android:textColor="@color/gray"
+        android:textStyle="bold" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/cuponesDescuento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/ejDescuentos"
+        android:inputType="text|textMultiLine|textNoSuggestions"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textoNotasRepartidor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/notasRepartidor"
+        android:textColor="@color/gray"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/notasRepartidor"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/ejRepartidor"
+        android:imeOptions="actionSearch"
+        android:inputType="text|textNoSuggestions" />
+
+    <TextView
+        android:id="@+id/textoValoracionExperiencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/valoraExperiencia"
+        android:textColor="@color/gray"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/estrellas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:numStars="5"
+        android:progressTint="@color/blue"
+        android:rating="5"
+        android:stepSize="1" />
+
+    <Button
+        android:id="@+id/botonConfimrarPago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/red2"
+        android:text="@string/confirmarPago"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:cornerRadius="4dp" />
+
+</LinearLayout>

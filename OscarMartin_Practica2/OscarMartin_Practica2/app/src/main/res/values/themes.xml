@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.OscarMartin_Practica2" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorControlActivated">@color/blue</item>
+    </style>
+
+    <style name="Theme.OscarMartin_Practica2" parent="Base.Theme.OscarMartin_Practica2" />
+</resources>

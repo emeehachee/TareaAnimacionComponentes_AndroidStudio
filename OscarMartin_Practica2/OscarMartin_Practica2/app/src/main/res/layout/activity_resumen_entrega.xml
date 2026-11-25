@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo3_pizza"
+    android:contentDescription="@string/web"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ResumenEntregaActivity">
+
+    <TextView
+        android:id="@+id/textoTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/paso2"
+        android:textStyle="bold"
+        android:textColor="@color/gray"/>
+
+    <ProgressBar
+        android:id="@+id/progresBarResumen"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:progressTint="@color/blue"
+        android:max="100"
+        android:progress="66" />
+
+    <EditText
+        android:id="@+id/desglose"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:text="@string/desloge"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textoModoEntrega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/modoEntrega"
+        android:textColor="@color/gray"
+        android:textStyle="bold" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonEntrega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:textOff="@string/textoToogleButtonOff"
+        android:textOn="@string/textoToogleButtonOn" />
+
+    <View
+        android:id="@+id/lineaEntrega"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="-8dp"
+        android:elevation="2dp" />
+
+    <TextView
+        android:id="@+id/totalPagar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/totalPagar"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imagenGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/web"
+            app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+        <TextView
+            android:id="@+id/textoImagenGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/consulta"
+            android:textSize="12sp"
+            android:textColor="@color/gray"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/botonAplicarDescuentoYPagar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/aplicarDescuentosPagar"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:cornerRadius="4dp" />
+
+</LinearLayout>

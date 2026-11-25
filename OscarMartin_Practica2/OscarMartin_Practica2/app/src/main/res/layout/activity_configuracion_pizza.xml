@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo3_pizza"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ConfiguracionPizzaActivity">
+
+    <TextView
+        android:id="@+id/textoConfiguracionPizza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/paso1"
+        android:textStyle="bold"
+        android:textColor="@color/gray"/>
+
+    <ProgressBar
+        android:id="@+id/barraProgreso"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:max="100"
+        android:progress="33"
+        android:progressTint="@color/blue" />
+
+    <TextView
+        android:id="@+id/textocorreoCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/cliente"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imagenPizza"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/pizza1" />
+
+    <TextView
+        android:id="@+id/textoSeleccionMasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/masa"
+        android:textColor="@color/gray"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerMasa"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:entries="@array/masasPizza" />
+
+    <TextView
+        android:id="@+id/textoTamanio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="@string/tamanio"
+        android:textColor="@color/gray"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+        android:id="@+id/tamanioGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mediana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:checked="true"
+            android:text="@string/mediana"
+            app:buttonTint="@color/blue" />
+
+        <RadioButton
+            android:id="@+id/familiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/familiar" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/textoIngredientesExtra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/ingredientesExtra"
+        android:textStyle="bold"
+        android:textColor="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/extraQueso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/extraQueso"
+            app:buttonIconTint="@color/white" />
+
+        <CheckBox
+            android:id="@+id/baconCrispy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/baconCrispy"
+            app:buttonIconTint="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imagenQueso"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/queso" />
+
+        <ImageView
+            android:id="@+id/imagenBacon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/bacon" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textCantidadPizza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/cantidad"
+        android:textColor="@color/gray"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/barraCantidadPizza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:max="10"
+        android:progress="1"
+        android:progressTint="@color/blue"
+        android:thumbTint="@color/blue" />
+
+    <TextView
+        android:id="@+id/subtotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/subtotal"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/botonContinuarResumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/red2"
+        android:text="@string/continuarResumen"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:cornerRadius="4dp" />
+
+</LinearLayout>

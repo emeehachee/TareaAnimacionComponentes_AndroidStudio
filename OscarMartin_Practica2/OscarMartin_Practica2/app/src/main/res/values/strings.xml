@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">OscarMartin_Practica2</string>
+    <string name="haztuPedido">¡Haz tu Pedido de Pizza!</string>
+    <string name="correo">Correo del cliente</string>
+    <string name="contrasenia">Contraseña</string>
+    <string name="ciudadEntrega">Ciudad de entrega</string>
+    <string name="entrarCarta">ENTRAR A LA CARTA</string>
+    <string name="recordarDireccion">Recordar mi direccion</string>
+    <string name="paso1">Paso 1 de 3: Configura tu Pizza</string>
+    <string name="cliente">Cliente:</string>
+    <string name="masa">Selecciona la Masa:</string>
+    <string name="tamanio">Tamaño:</string>
+    <string name="mediana">Mediana (8.00€)</string>
+    <string name="familiar">Familiar (12.00€)</string>
+    <string name="ingredientesExtra">Ingredientes Extra (+1.50€ c/u):</string>
+    <string name="extraQueso">Extra Queso</string>
+    <string name="baconCrispy">Bacon Crispy</string>
+    <string name="cantidad">Cantidad: 1 pizza</string>
+    <string name="subtotal">Subtotal:</string>
+    <string name="continuarResumen">CONTINUAR AL RESUMEN</string>
+    <string name="paso2">Paso 2 de 3: Resumen y Forma de Entrega</string>
+    <string name="desglosePedido">DESGLOSE DEL PEDIDO</string>
+    <string name="modoEntrega">Modo de Entrega:</string>
+    <string name="totalPagar">Total a Pagar:</string>
+    <string name="aplicarDescuentosPagar">APLICAR DESCUENTOS Y PAGAR</string>
+    <string name="consulta">Consulta la ubicacion y web de nuestra pizzeria</string>
+    <string name="web">web</string>
+    <string name="Paso3">Paso 3 de 3: Cupones y Valoracion Final</string>
+    <string name="aplicarCupones">Aplicar Cupones de Descuento (separados por coma):</string>
+    <string name="ejDescuentos">Ej: 2x1Martes, EnvioGratis...</string>
+    <string name="notasRepartidor">Notas para el repartidor (presionar Buscar en teclado)</string>
+    <string name="ejRepartidor">Ej: Si timbre, llamar por telefono...</string>
+    <string name="valoraExperiencia">Valora tu experiencia con la App:</string>
+    <string name="confirmarPago">CONFIRMAR PAGO Y FINALIZAR</string>
+    <string name="desloge">DESGLOSE DEL PEDIDO:</string>
+    <string name="textoToogleButtonOff">RECOGIDA EN LOCAL (GRATIS)</string>
+    <string name="textoToogleButtonOn">ENVIO A DOMICILIO (+2.00€)</string>
+    <string-array name="masasPizza">
+        <item>Masa Tradicional Italiana</item>
+        <item>Masa Fina y Crujiente</item>
+        <item>Masa Rellena de Queso</item>
+    </string-array>
+    <string-array name="ciudades">
+        <item>Madrid</item>
+        <item>Valencia</item>
+        <item>Barcelona</item>
+        <item>Sevilla</item>
+    </string-array>
+</resources>
